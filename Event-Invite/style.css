@@ -1,0 +1,23 @@
+#title{
+  width: 500px;
+  margin: auto;
+  border: 5px dotted lightblue;
+}
+body{
+  font-family:Chalkduster, fantasy;
+}
+#time{
+  border:5px ridge red;
+  width: 300px;
+  margin: auto;
+}
+body {
+  background-image: url("https://shopsmartcalifornia.com/wp-content/uploads/2018/06/party-background.jpg");
+  background-repeat: no-repeat;
+   background-position: top;
+}
+#food{
+  border:5px dashed green;
+  width: 300px;
+  margin: auto;
+}
