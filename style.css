@@ -1,0 +1,32 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://wallpaperplay.com/walls/full/f/2/1/187234.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+#internet-presentation{
+  position:absolute;
+  right:90px;
+  top:920px;
+}
+#code{
+  position:absolute;
+  right:90px;
+  top:1300px;
+}
+.underline{
+  text-decoration: underline;
+}

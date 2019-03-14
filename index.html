@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+	<!-- Navbar (sit on top) -->
+	<div class="w3-top">
+		<div class="w3-bar w3-white w3-card" id="myNavbar">
+			<a href="#home" class="w3-bar-item w3-button w3-wide">Computers 9 Honors</a>
+			<!-- Right-sided navbar links -->
+			<div class="w3-right w3-hide-small">
+				<a href="#about" class="w3-bar-item w3-button">Intro to CS</a>
+				<a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Web Design</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Web Programming</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Web VR</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Intro to CS</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">Web Design</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">Web Programming</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">Web VR</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Computers 9 Honors Portfolio</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Computers 9 Honors Portfolio</span><br>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+  </div>
+</header>
+
+<!-- Intro to CS -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Intro to CS</h3>
+      <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1reNwxnrgh83Uywj62qFNgzimdpWqnxU8TsIXFYJBRFI&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+      <div id="internet-presentation"><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSbTF7D_f-LJ4KSXyHCSG4n1lyazrtBTtWKSJsPV8glSKqxdM226XFMRTq2rBsHMAEWn03_9kTroKyu/embed?start=false&loop=false&delayms=3000" frameborder="0" width="400" height="300" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+      </div>
+    <div id="code">
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTlZcprClGxp6hUBY7qyJ_wO9G0-ISoUp7ZqFP8eXnrs_0zwXyoMGp7AaEodEyMTpMtHRtCEVcMJt0N/embed?start=false&loop=false&delayms=3000" frameborder="0" width="400" height="300" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- Web Design Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">Web Design</h3>
+  <p class="w3-center w3-large">Websites</p>
+<div class="w3-row-padding w3-center" style="margin-top:64px"> <div class="w3-quarter"></i>
+<a href="Travel-Webpage/index.html"><img src="https://image.flaticon.com/icons/png/512/17/17981.png" width=100></a>
+      <span class="underline"><p class="w3-large">Travel Webpage</p>
+      <p>With the Travel Webpage we learned about colors, both background and text, as well as text decorations, styles and weight.</p>
+    </div>
+    <div class="w3-quarter">
+      <a href="Recipe-Book/index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzUEXJNgdrZ_w-s9N1gJx2hh4KXy3CiOU4WskByAk_eJqnmW2x" width=100>
+      <p class="w3-large">Recipe Book</p>
+      <p>With the Recipe Book we learned about ordered and unordered lists as well as internal links with classes and ID's</p>
+    </div>
+    <div class="w3-quarter">
+      <a href="Blog/index.html">
+      <img src="https://www.shareicon.net/data/128x128/2015/09/22/644791_notebook_512x512.png" width=100>
+      <p class="w3-large">Blog</p>
+      <p>The Blog project was about summarizing what we leared about HTML and CSS, we included different font types, notes, line height and background images.</p>
+    </div>
+    <div class="w3-quarter">
+      <a href="Event-Invite/index.html">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///8AAAAeHh7o6OgwMDDu7u6enp62trb8/PzExMRxcXFpaWni4uJ0dHSUlJQjIyOGhoatra1WVlYrKytkZGTV1dUZGRk9PT2hoaGxsbFOTk5ISEgSEhJ9fX3GxsbPz8+QNOAoAAAE9UlEQVR4nO2b6XbaMBBGISuQvZTsSd//LVtX5xAcPNKs0siZ+zdY+Pr7bEs2WSyCIAiCIAiC4Ady3XoHjFldLa9WrXfCkvVyYN16N8z4F2BirjGul1/MMcZ9gHONcb38zrxi/Bbg/GI8DnBeMU4GOKcYoQDnEmMmwHnEmA+w/xiLAfYeIybAnmNEBthvjPgA+4wRDnAzjxjBALfXi+tt/zHCAd7+//tt7zHmAkz0HWMpwETHMZYDTPQaIy7ARJcxYgNM9BcjJcBEZzHSAkz0FCM9wEQ3MYIBnpXeU1yf9RAjN8BEBzFyzsBDvJ+NsgATrmOUBpjwG6NGgAmnMeoEmPAYo16ACXcx8u+BEL7ujeQAX15/ffH6Mv0hRzHSz8CL0ccugE95ORs5ZyDO0EmMrEso1tBBjMxLKNqweYzceyDBsGmM/HsgxbBhjIJJDM2wUYyiSQzRsEmMskkM2bD6FEc6C6UbVo5RvIzgGFY8GxWWESzDajFqrAOZhlVi1FkHcg0rxKi0kOcbGseotpAXGJrGqLeQFxma3Rs1n8TIDI1i1HyUJjY0OBuVH6U9j4Z45gyhHKMgwIfNzTFvo0HeJj6xeSgNrBmjKMB7aNsC9+Wh1WKUnYGGhloxgj8+w52BloaZGDcEw/fpIbCXUFtDMMZ3guHJ5AjoS6ixIRTjidCQMIkxN5ye4ggNPwib2xsuFh/qhstLV4aXE5tLDQmXKnvDyYu92HB5d+rE8PRucnO5IbqpxoZTDdUyRDbV1hCcjqgY4po6cZ1DgbleAw3VM0Q1dbc+5vNmNMrN58RnduWhoYZqGpKmfwcorA8zDVU1xF9TR4jX+NmG6hqS7v575Ia5hmobcpoqNsw2VN2Q0VShYaGh+ob0psoMSw2VGf6eHpDYVJEh0NDxnvENV8ABpDVVYAg19HKlZHgOf0UVQ/gAn6sZgjUhNJVtmPlqTcPMgbQ1zNZH1VDcVJ5h/sDqGkqbyjIsfKW2oaypDMNibdQNRU2lG5YPqL6hpKlkQ8RXWRjym0o0RNXFxJDdVJoh7kDaGHKbSjJEfoWVIa+pBEN0TcwMWU3dPRySe+iEP4B2hhrzVBDC0JaG8nkqAKkepoYqK6pjaAfO1tCkqcQhrQ3Vm0quhbmhclPpB8zeULWpjKFqGKo1lVWHKoZKTeUdqDqGKk1lDlHLUNxUdg2qGQqbyj9A9QxFTRVsWtOQHYQo/qqGzF2VncJ1DVl1E16GaxuSAxHfSqsbEndZPh2qb0iqncJEoYUhOhiVyV4TQ+Su60zY2xii6qe06GplWAxIbeHczLCgoPfwo51htoaKjwVaGkJBbf8A/w7CerTT1BDzM60vmI/n2hoifmq3h/uItbUh6sdoA+zH5M0NcU0VvOpob4hpquQlgAfDYlNFL3JcGOabKnwZ58Mw11TpC1UvhmBTZa8aF44Mp5sqfl3syXCqqRqv/D0ZHjVV3NABV4bjpio0dMCX4WFTNRo64M1w31SVhg64M0xNVWrogD/DoalaDR3waLhA/BclHpeGqoQhTBh6IQxhwtALYQgThl4IQ5gw9EIYwoShF8IQJgy9EIYwYeiFMIQJQy+EIUwYeiEMYcLQC2EIMzbcnXplp2TYC2EYhv4JwzD0TxiGoX/C8GcZPrbeWRaPBMOn7Vl/bJ8IhkEQBEEQBEEQBEEQBEEQBEEQBPX5C0wmW5rOvRlUAAAAAElFTkSuQmCC" width=100>
+      <p class="w3-large">Event Invite</p>
+      <p>Here we learned CSS Positions, Margins, Paddings, Box Models, and Borders</p>
+    </div>
+  </div>
+</div>
+
+<!-- Web design Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">Web Design</h3>
+  <p class="w3-center w3-large">The ones who runs this company</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://wallpaperplay.com/walls/full/f/2/1/187234.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>text</h3>
+          <p class="w3-opacity">texttext</p>
+          <p>texttexttexttexttexttexttexttexttext</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://wallpaperplay.com/walls/full/f/2/1/187234.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>text</h3>
+          <p class="w3-opacity">texttext</p>
+          <p>texttexttexttexttexttexttexttexttext</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://wallpaperplay.com/walls/full/f/2/1/187234.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>text</h3>
+          <p class="w3-opacity">texttext</p>
+          <p>texttexttexttexttexttexttexttexttext</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://wallpaperplay.com/walls/full/f/2/1/187234.jpg" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>text</h3>
+          <p class="w3-opacity">text</p>
+          <p>texttexttexttexttexttexttexttexttext</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Partners
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>Projects Done
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">89+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Meetings
+  </div>
+</div>
+
+<!-- Web Programming Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">Web Programming</h3>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="https://wallpaperplay.com/walls/full/f/2/1/187234.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://wallpaperplay.com/walls/full/f/2/1/187234.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://wallpaperplay.com/walls/full/f/2/1/187234.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://wallpaperplay.com/walls/full/f/2/1/187234.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="https://wallpaperplay.com/walls/full/f/2/1/187234.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://wallpaperplay.com/walls/full/f/2/1/187234.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://wallpaperplay.com/walls/full/f/2/1/187234.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://wallpaperplay.com/walls/full/f/2/1/187234.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Text.</h3>
+      <p>texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext<br>
+      texttexttexttexttexttexttext</p>
+      <p>texttexttexttexttexttexttexttexttexttexttexttexttext<br>
+      texttexttexttexttext</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>text</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:90%">number%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:85%">number%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>text</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:75%">number%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Web VR Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+  <h3>Web VR</h3>
+  <p class="w3-large">Web VR</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">text</li>
+        <li class="w3-padding-16"><b>text</b> text</li>
+        <li class="w3-padding-16"><b>text</b> text</li>
+        <li class="w3-padding-16"><b>text</b> text</li>
+        <li class="w3-padding-16"><b>text</b>text</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">text</h2>
+          <span class="w3-opacity">text</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">text</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-48">text</li>
+        <li class="w3-padding-16"><b>text</b> Storage</li>
+        <li class="w3-padding-16"><b>text</b> text</li>
+        <li class="w3-padding-16"><b>text</b> text</li>
+        <li class="w3-padding-16"><b>text</b>text</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">text</h2>
+          <span class="w3-opacity">text</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">text</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">text</li>
+        <li class="w3-padding-16"><b>text</b> text</li>
+        <li class="w3-padding-16"><b>text</b> text</li>
+        <li class="w3-padding-16"><b>text</b> text</li>
+        <li class="w3-padding-16"><b>text</b> </li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide"></h2>
+          <span class="w3-opacity">text</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Image of location/map -->
+    <img src="https://wallpaperplay.com/walls/full/f/2/1/187234.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
