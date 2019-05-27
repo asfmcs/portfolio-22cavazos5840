@@ -1,0 +1,485 @@
+
+<html>
+<head>
+<title>Problem 3-3: Maze</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://static.codehs.com/gulp/ec071a764d83f34910ba21fab0b0f0cc20293542/chs-js-lib/chs.js"></script>
+
+
+<style>
+canvas {
+    border: 1px solid black;
+    display: inline-block;
+    vertical-align: top;
+}
+
+pre {
+    border: 1px solid black;
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    background-color: #F5F5F5;
+}
+</style>
+
+</head>
+
+<body>
+<h1>Problem 3-3: Maze</h1>
+
+
+
+<canvas
+width="400"
+height="500"
+class="codehs-editor-canvas"></canvas>
+<pre id="console"></pre>
+
+<script>
+window.onload = function() {
+
+    function start() {
+    var pink = ("#FFC0CB");
+    drawMaze(Color.BLACK);
+    
+    drawGhost(160,100,Color.RED);
+    drawGhost(90,280,Color.CYAN);
+    drawGhost(158,430,pink);
+    drawGhost(340,200,Color.ORANGE);
+    drawPacman(100,40);
+    
+    //drawPacman(100,100);
+    
+}
+
+
+function drawMaze(color){
+    
+    var neonBlue = ("#1919A6");
+    
+    var bg = new Rectangle(getWidth(), getHeight());
+    bg.setColor(color);
+    bg.setPosition(0,0);
+    add(bg);
+    
+    var l1 = new Line(0, 180, 0, 0);
+    l1.setColor(neonBlue);
+    l1.setLineWidth(12);
+    add(l1);
+    
+    var l2 = new Line(0, 0, 180, 0);
+    l2.setColor(neonBlue);
+    l2.setLineWidth(12);
+    add(l2);
+    
+    var l3 = new Line(80, 90, 140, 90);
+    l3.setColor(neonBlue);
+    l3.setLineWidth(8);
+    add(l3);
+    
+    var l4 = new Line(80, 150, 140, 150);
+    l4.setColor(neonBlue);
+    l4.setLineWidth(8);
+    add(l4);
+    
+    var l5 = new Line(140, 86, 140, 154);
+    l5.setColor(neonBlue);
+    l5.setLineWidth(8);
+    add(l5);
+    
+    var l6 = new Line(80, 86, 80, 154);
+    l6.setColor(neonBlue);
+    l6.setLineWidth(8);
+    add(l6);
+    
+    var l7 = new Line(80, 86, 80, 154);
+    l7.setColor(neonBlue);
+    l7.setLineWidth(8);
+    add(l7);
+    
+    var l8 = new Line(0, 260, 0, 510);
+    l8.setColor(neonBlue);
+    l8.setLineWidth(12);
+    add(l8);
+    
+    var l9 = new Line(260, 0, 510, 0);
+    l9.setColor(neonBlue);
+    l9.setLineWidth(12);
+    add(l9);
+    
+    var l10 = new Line(400, 0, 400, 250);
+    l10.setColor(neonBlue);
+    l10.setLineWidth(12);
+    add(l10);
+    
+    var l11 = new Line(100, 400, 300, 400);
+    l11.setColor(neonBlue);
+    l11.setLineWidth(8);
+    add(l11);
+    
+    var l12 = new Line(100, 330, 300, 330);
+    l12.setColor(neonBlue);
+    l12.setLineWidth(8);
+    add(l12);
+    
+    var l13 = new Line(100, 326, 100, 404);
+    l13.setColor(neonBlue);
+    l13.setLineWidth(8);
+    add(l13);
+    
+    var l14 = new Line(300, 326, 300, 404);
+    l14.setColor(neonBlue);
+    l14.setLineWidth(8);
+    add(l14);
+    
+    var l15 = new Line(400, 330, 400, 500);
+    l15.setColor(neonBlue);
+    l15.setLineWidth(12);
+    add(l15);
+    
+    var l16 = new Line(0, 180, 0, 0);
+    l16.setColor(neonBlue);
+    l16.setLineWidth(12);
+    add(l16);
+    
+    var l17 = new Line(240, 90, 300, 90);
+    l17.setColor(neonBlue);
+    l17.setLineWidth(8);
+    add(l17);
+    
+    var l18 = new Line(240, 250, 300, 250);
+    l18.setColor(neonBlue);
+    l18.setLineWidth(8);
+    add(l18);
+
+    var l19 = new Line(200, 478, 500, 478);
+    l19.setColor(neonBlue);
+    l19.setLineWidth(8);
+    add(l19);
+    
+    var l19 = new Line(0, 478, 120, 478);
+    l19.setColor(neonBlue);
+    l19.setLineWidth(8);
+    add(l19);
+    
+    var l20 = new Line(300, 86, 300, 254);
+    l20.setColor(neonBlue);
+    l20.setLineWidth(8);
+    add(l20);
+    
+    var l21 = new Line(242, 86, 242, 254);
+    l21.setColor(neonBlue);
+    l21.setLineWidth(8);
+    add(l21);
+    
+    var l22 = new Line(80, 250, 80, 230);
+    l22.setColor(neonBlue);
+    l22.setLineWidth(8);
+    add(l22);
+    
+    var l23 = new Line(145, 250, 145, 230);
+    l23.setColor(neonBlue);
+    l23.setLineWidth(8);
+    add(l23);
+
+    var l24 = new Line(76, 250, 149, 250);
+    l24.setColor(neonBlue);
+    l24.setLineWidth(8);
+    add(l24);
+    
+    var l25 = new Line(76, 230, 149, 230);
+    l25.setColor(neonBlue);
+    l25.setLineWidth(8);
+    add(l25);
+    
+    var dot = new Circle(13);
+    dot.setPosition(40,100);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(90,50);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(90,200);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(90,300);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(90,450);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(140,50);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(140,200);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(140,300);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    
+    var dot = new Circle(8);
+    dot.setPosition(190,50);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(190,100);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(190,150);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(190,200);
+    dot.setColor(Color.white);
+    add(dot);
+    
+     var dot = new Circle(8);
+    dot.setPosition(190,250);
+    dot.setColor(Color.white);
+    add(dot);
+    
+     var dot = new Circle(8);
+    dot.setPosition(190,300);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(240,50);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(290,50);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(13);
+    dot.setPosition(340,50);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(340,100);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(340,150);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(340,200);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(340,250);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(340,300);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(340,350);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(340,400);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(340,450);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(290,450);
+    dot.setColor(Color.white);
+    add(dot);
+    
+     var dot = new Circle(13);
+    dot.setPosition(290,300);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(240,300);
+    dot.setColor(Color.white);
+    add(dot);
+    
+     var dot = new Circle(8);
+    dot.setPosition(240,450);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(190,450);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(140,450);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    
+    var dot = new Circle(8);
+    dot.setPosition(40,150);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(40,200);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(40,250);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(40,300);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(13);
+    dot.setPosition(40,350);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(40,400);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(40,450);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(40,200);
+    dot.setColor(Color.white);
+    add(dot);
+    
+    var dot = new Circle(8);
+    dot.setPosition(40,50);
+    dot.setColor(Color.white);
+    add(dot);
+}
+
+function drawPacman(centerX,locationY){
+    
+
+    
+    var circle = new Circle(30);
+    circle.setPosition(centerX, locationY);
+    circle.setColor(Color.yellow);
+    add(circle);
+    
+    var eye = new Circle(5);
+    eye.setPosition(centerX + 10 , locationY - 15);
+    eye.setColor(Color.black);
+    add(eye);
+    
+    var mouth = new Arc(26, 330, 25, 0);
+    mouth.setPosition(centerX + 5, locationY);
+    mouth.setColor(Color.black);
+    add(mouth);
+    
+    
+}
+
+function drawGhost(centerX, centerY,color){
+
+    var w = 30;
+    var l = 30;
+    
+    var rect = new Rectangle(w, l);
+    rect.setPosition(centerX, centerY);
+    rect.setColor(color);
+    add(rect);
+    
+    var head = new Circle(w/2);
+    head.setColor(color);
+    head.setPosition(centerX + 15, centerY);
+    add(head);
+    
+    var eye1 = new Circle(5);
+    eye1.setColor(Color.white);
+    eye1.setPosition(centerX + 10, centerY);
+    add(eye1);
+    
+    
+    var eye2 = new Circle(5);
+    eye2.setColor(Color.white);
+    eye2.setPosition(centerX + 23, centerY);
+    add(eye2);
+    
+    
+    var pupil1 = new Circle(3);
+    pupil1.setColor(Color.blue);
+    pupil1.setPosition(centerX + 11, centerY);
+    add(pupil1);
+    
+    var pupil2 = new Circle(3);
+    pupil2.setColor(Color.blue);
+    pupil2.setPosition(centerX + 24, centerY);
+    add(pupil2);
+    
+    var bottonCircle1 = new Circle(w/6.5);
+    bottonCircle1.setColor(color);
+    bottonCircle1.setPosition(centerX + 5, centerY + 30);
+    add(bottonCircle1);
+    
+    var bottonCircle2 = new Circle(w/6.5);
+    bottonCircle2.setColor(color);
+    bottonCircle2.setPosition(centerX + 15, centerY + 30);
+    add(bottonCircle2);
+    
+    var bottonCircle3 = new Circle(w/6.5);
+    bottonCircle3.setColor(color);
+    bottonCircle3.setPosition(centerX + 25, centerY + 30);
+    add(bottonCircle3);
+    
+
+}
+
+
+    if (typeof start === 'function') {
+        start();
+    }
+};
+</script>
+
+</body>
+</html>
